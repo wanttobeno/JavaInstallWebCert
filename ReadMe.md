@@ -46,3 +46,17 @@ Loading KeyStore /usr/java/jdk1.8.0_211/jre/lib/security/jssecacerts...
 Opening connection to  www.github.com:443...
 Starting SSL handshake...
 ```
+
+##### 注意JAVA_HOME调用的jre
+
+```
+java.exe -jar  com.wow.InstallCert-1.0.jar host
+使用到的是jre
+D:\Program Files\Java\jre1.8.0_74\lib\security\cacerts
+```
+
+```
+D:\Program Files\Java\jdk1.8.0_74\jre\bin\java.exe" -jar com.wow.InstallCert-1.0.jar host
+使用到的是jdk里的jre
+D:\Program Files\Java\jdk1.8.0_74\jre\lib\security\jssecacerts.
+```
